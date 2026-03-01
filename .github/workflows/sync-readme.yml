@@ -45,7 +45,11 @@ jobs:
       - name: Commit and push
         if: steps.check.outputs.has_changes == 'true'
         working-directory: current-repo
+        env:
+          # we need a PAT here because GITHUB_TOKEN can't push when the workflow
+          # is triggered by a repository_dispatch from another repo
+          PAT: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
         run: |
           git add README.md
           git commit -m "chore: sync README from aakanksha0402.github.io"
-          git push
+          git push https://x-access-token:${PAT}@github.com/aakanksha0402/aakanksha0402.git HEAD:main
