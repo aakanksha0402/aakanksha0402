@@ -2,7 +2,7 @@
 
 Senior Software Engineer · Human in AI Loop  
 India · Open to remote opportunities  
-Email: [aakanksha0402@gmail.com](mailto:aakanksha0402@gmail.com) · LinkedIn: https://www.linkedin.com/in/aakanksha0402 · Website: https://aakanksha0402.github.io/
+Email: [aakanksha0402@gmail.com](mailto:aakanksha0402@gmail.com) · LinkedIn: https://www.linkedin.com/in/aakanksha0402 · GitHub: https://github.com/aakanksha0402
 
 ---
 
@@ -20,7 +20,7 @@ Day-to-day work powered by Cursor, Claude Code for agentic multi-file changes, a
 
 ## EXPERIENCE
 
-### Software Engineer · Jiva AgServices · Bangalore (Remote)  
+### Senior Software Engineer · Jiva AgServices · Bangalore (Remote)  
 **Jan 2023 – Feb 2026**
 
 - Designed and developed scalable services using Ruby on Rails, GraphQL, and a microservices architecture.
@@ -62,7 +62,7 @@ Day-to-day work powered by Cursor, Claude Code for agentic multi-file changes, a
 ## TECHNICAL SKILLS
 
 - **AI & Tooling:** Cursor, Claude Code, MCP Servers, Agentic Applications, Conductor, Prompt Engineering.
-- **Languages & Frameworks:** Ruby on Rails, Ruby (1.9+), Rails (4.2+), Node.js, React, Ember.js, CoffeeScript, JavaScript, HTML, SCSS, SQL.
+- **Languages & Frameworks:** Ruby on Rails, Ruby (1.9+), Rails (4.2+), React, Ember.js, CoffeeScript, JavaScript, HTML, SCSS, SQL.
 - **Cloud, DevOps & Payments:** AWS, GCP, Heroku, Docker, CI/CD, CircleCI, Teamcity, Sidekiq, Ledger management, Stripe, PayPal, Braintree.
 - **Architecture & APIs:** GraphQL, REST APIs, RPC, Microservices, Swagger.
 - **Databases & Messaging:** PostgreSQL, MySQL, MongoDB, Redis, Kafka, Elasticsearch, Datadog.
@@ -87,5 +87,5 @@ Day-to-day work powered by Cursor, Claude Code for agentic multi-file changes, a
 
 ## EDUCATION
 
-- **Master of Computer Application (MCA)** · GDCST · Sardar Patel University · Anand, Gujarat · 2014 – 2016.
-- **Bachelor in Computer Science** · NCSC · Veer Narmad South Gujarat University · Bharuch, Gujarat · 2011 – 2014.
+- **Master of Computer Application (MCA)** · GDCST · Sardar Patel University · Anand, Gujarat · 2014 – 2016
+- **Bachelor in Computer Science** · NCSC · Veer Narmad South Gujarat University · Bharuch, Gujarat · 2011 – 2014
