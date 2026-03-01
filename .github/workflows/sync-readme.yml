@@ -1,5 +1,8 @@
 name: Sync README from website repo
 
+permissions:
+  contents: write
+
 on:
   repository_dispatch:
     types: [readme-updated]
@@ -9,20 +12,24 @@ jobs:
   sync-readme:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout website repo
-        uses: actions/checkout@v4
-        with:
-          repository: aakanksha0402/aakanksha0402.github.io
-          path: website-repo
-          token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Download README from website repo
+        run: |
+          # fetch the public raw README from the website repo (fast, avoids cross-repo checkout)
+          curl -fsSL -o website-repo-README.md https://raw.githubusercontent.com/aakanksha0402/aakanksha0402.github.io/main/README.md
+          mkdir -p website-repo
+          mv website-repo-README.md website-repo/README.md
 
       - name: Checkout current repo
         uses: actions/checkout@v4
         with:
           path: current-repo
-          # use the PAT so we can push changes when this workflow is triggered
-          # by a repository_dispatch from another repo
-          token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      # checkout current repo (uses GITHUB_TOKEN from permissions above)
+      - name: Checkout current repo
+        uses: actions/checkout@v4
+        with:
+          path: current-repo
 
       - name: Copy README
         run: cp website-repo/README.md current-repo/README.md
@@ -47,13 +54,7 @@ jobs:
       - name: Commit and push
         if: steps.check.outputs.has_changes == 'true'
         working-directory: current-repo
-        env:
-          # we need a PAT here because GITHUB_TOKEN can't push when the workflow
-          # is triggered by a repository_dispatch from another repo
-          PAT: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
         run: |
           git add README.md
           git commit -m "chore: sync README from aakanksha0402.github.io"
-          # ensure origin uses the PAT, then push to main
-          git remote set-url origin https://x-access-token:${PAT}@github.com/aakanksha0402/aakanksha0402.git
           git push origin HEAD:main
