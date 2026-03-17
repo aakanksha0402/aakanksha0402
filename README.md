@@ -1,6 +1,6 @@
 ## AAKANKSHA SHARMA
 
-Senior Software Engineer · Human in AI Loop  
+Senior-level Software Engineer · Human in AI Loop  
 India · Open to remote opportunities  
 Email: [aakanksha0402@gmail.com](mailto:aakanksha0402@gmail.com) · LinkedIn: https://www.linkedin.com/in/aakanksha0402 · GitHub: https://github.com/aakanksha0402 · Website: https://aakanksha0402.github.io
 
@@ -8,7 +8,7 @@ Email: [aakanksha0402@gmail.com](mailto:aakanksha0402@gmail.com) · LinkedIn: ht
 
 ## PROFILE
 
-Senior Software Engineer with 10+ years building and scaling web applications. Skilled in leading projects, delivering reliable, test-driven, and scalable solutions while collaborating across stakeholders.
+Senior-level Software Engineer with 10+ years building and scaling web applications. Skilled in leading projects, delivering reliable, test-driven, and scalable solutions while collaborating across stakeholders.
 
 ---
 
@@ -20,7 +20,7 @@ Day-to-day work powered by Cursor, Claude Code for agentic multi-file changes, a
 
 ## EXPERIENCE
 
-### Senior Software Engineer · Jiva AgServices · Bangalore (Remote)  
+### Software Engineer · Jiva AgServices · Bangalore (Remote)  
 **Jan 2023 – Feb 2026**
 
 - Designed and developed scalable services using Ruby on Rails, GraphQL, and a microservices architecture.
